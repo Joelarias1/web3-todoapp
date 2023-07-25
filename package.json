@@ -11,15 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Joelarias1/Web3-Reminder.git"
+    "url": "git+https://github.com/Joelarias1/web3-todoapp"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Joelarias1/Web3-Reminder/issues"
+    "url": "https://github.com/Joelarias1/web3-todoapp/issues"
   },
-  "homepage": "https://github.com/Joelarias1/Web3-Reminder#readme",
   "dependencies": {
     "@truffle/contract": "^4.6.27",
     "bootstrap": "^5.3.0",
