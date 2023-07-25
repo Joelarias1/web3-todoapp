@@ -1,0 +1,29 @@
+{
+  "name": "primerproyecto",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joelarias1/Web3-Reminder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joelarias1/Web3-Reminder/issues"
+  },
+  "homepage": "https://github.com/Joelarias1/Web3-Reminder#readme",
+  "dependencies": {
+    "@truffle/contract": "^4.6.27",
+    "bootstrap": "^5.3.0",
+    "lite-server": "^2.6.1"
+  },
+  "description": ""
+}

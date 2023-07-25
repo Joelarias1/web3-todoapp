@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Dapp Tasks</title>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <div class="card card-body bg-light rounded mb-2 text-dark">
+            <span id="account" class="text-center fw-bold"></span>
+          </div>
+        </div>
+
+        <div class="col-md-8 mt-2">
+          <form
+            class="card card-body bg-light rounded mb-4 text-white"
+            id="taskForm"
+          >
+            <input
+              type="text"
+              name="title"
+              placeholder="Title of task"
+              class="form-control my-4"
+            />
+            <textarea
+              name="description"
+              placeholder="I have to do..."
+              rows="4"
+              class="form-control"
+            ></textarea>
+
+            <button class="btn btn-secondary my-4">Save</button>
+          </form>
+        </div>
+        <div class="col-md-8">
+          <div id="taskList"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="./libs/@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
