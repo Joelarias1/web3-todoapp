@@ -1,0 +1,29 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '16.x'
+    displayName: 'Instalar Node.js'
+
+  - script: |
+      npm install -g truffle
+      npm install
+    displayName: 'Instalar dependencias'
+
+  - script: |
+      truffle compile
+    displayName: 'Compilar contratos inteligentes'
+
+  - script: |
+      truffle test
+    displayName: 'Ejecutar pruebas de contratos'
